@@ -31,7 +31,6 @@ public class AuthFilter extends GenericFilterBean {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("FILTER");
         String token = getTokenFromRequest((HttpServletRequest) servletRequest);
         Optional<User> optionalUser = userRepository.findByToken(token);
         if (optionalUser.isPresent()) {

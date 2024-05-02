@@ -1,14 +1,14 @@
 package ru.ngteam.toast_news.controller;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.*;
 import ru.ngteam.toast_news.dto.SignInDto;
 import ru.ngteam.toast_news.dto.SignUpDto;
 import ru.ngteam.toast_news.dto.TokenDto;
+import ru.ngteam.toast_news.dto.UserDto;
 import ru.ngteam.toast_news.exceptions.AuthException;
+import ru.ngteam.toast_news.model.User;
 import ru.ngteam.toast_news.services.AuthorizationService;
 
 @RestController

@@ -1,10 +1,12 @@
 package ru.ngteam.toast_news.services.impl;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import ru.ngteam.toast_news.dto.SignInDto;
 import ru.ngteam.toast_news.dto.SignUpDto;
 import ru.ngteam.toast_news.dto.TokenDto;
+import ru.ngteam.toast_news.dto.UserDto;
 import ru.ngteam.toast_news.exceptions.AuthException;
 import ru.ngteam.toast_news.mapper.UserMapper;
 import ru.ngteam.toast_news.model.User;
@@ -43,5 +45,11 @@ public class AuthorizationServiceImpl implements AuthorizationService {
         user.setToken(token);
         userRepository.save(user);
         return new TokenDto(token);
+    }
+
+    @Override
+    public UserDto getProfile() {
+        User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        return userMapper.toDto(user);
     }
 }

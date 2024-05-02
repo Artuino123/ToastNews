@@ -15,7 +15,7 @@ public class UserMapper {
                 .id(user.getId())
                 .name(user.getName())
                 .email(user.getEmail())
-                .avatarId(UUID.randomUUID())
+                .avatarId(null)
                 .build();
     }
 
