@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d657c522-5502-4bb3-91cb-7b58cf5a43e8" name="Changes" comment="" />
+    <list default="true" id="d657c522-5502-4bb3-91cb-7b58cf5a43e8" name="Changes" comment="commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/config/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/handlers/ErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/dto/ErrorDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/dto/SignInDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/dto/TokenDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/exceptions/AuthException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/exceptions/ToastException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/services/AuthorizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/services/impl/AuthorizationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/AuthorizationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/mapper/PostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/repository/UserRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -48,7 +69,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/artur/IdeaProjects/ToastNews/src/main/java/org/example/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -94,7 +115,10 @@
       <updated>1714135621352</updated>
       <workItem from="1714135622397" duration="16242000" />
       <workItem from="1714239125813" duration="9142000" />
-      <workItem from="1714319502154" duration="637000" />
+      <workItem from="1714319502154" duration="7824000" />
+      <workItem from="1714472518059" duration="795000" />
+      <workItem from="1714517470243" duration="520000" />
+      <workItem from="1714555221325" duration="6767000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
@@ -113,5 +137,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -16,6 +16,7 @@ public class PostMapper {
     public PostDto toDto(Post post) {
         return PostDto.builder()
                 .author(userMapper.toDto(post.getAuthor()))
+                .title(post.getTitle())
                 .text(post.getText())
                 .creationDate(post.getCreationDate())
                 .build();

@@ -27,4 +27,5 @@ public class User {
     private String email;
     private String passwordHash;
     private UUID avatarId;
+    private String token;
 }

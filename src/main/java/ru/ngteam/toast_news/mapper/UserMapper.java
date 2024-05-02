@@ -1,6 +1,7 @@
 package ru.ngteam.toast_news.mapper;
 
 import org.springframework.stereotype.Service;
+import ru.ngteam.toast_news.dto.SignInDto;
 import ru.ngteam.toast_news.dto.SignUpDto;
 import ru.ngteam.toast_news.dto.UserDto;
 import ru.ngteam.toast_news.model.User;
@@ -31,6 +32,13 @@ public class UserMapper {
                 .name(signUpDto.getName())
                 .email(signUpDto.getEmail())
                 .passwordHash(signUpDto.getPassword())
+                .build();
+    }
+
+    public User toUser(SignInDto signInDto) {
+        return User.builder()
+                .email(signInDto.getEmail())
+                .passwordHash(signInDto.getPassword())
                 .build();
     }
 }
