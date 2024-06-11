@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.51">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1032</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1057</IntrospectionStateNumber>
       <ServerVersion>16.1</ServerVersion>
-      <StartupTime>1713798314</StartupTime>
+      <StartupTime>1714727955</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -801,7 +801,6 @@ false Zulu
 13474||10|C|G
 13474||-9223372036854775808|U|G
 13474||10|U|G</Grants>
-      <IntrospectionStateNumber>1001</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -823,7 +822,7 @@ false Zulu
 13474||10|C|G
 13474||-9223372036854775808|U|G
 13474||10|U|G</Grants>
-      <IntrospectionStateNumber>1032</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1058</IntrospectionStateNumber>
       <ObjectId>16508</ObjectId>
       <OwnerName>artur</OwnerName>
     </database>
@@ -4249,38 +4248,91 @@ false Zulu
     <schema id="267" parent="5" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1032</IntrospectionStateNumber>
-      <LastIntrospectionLocalTimestamp>2024-04-27.16:56:54</LastIntrospectionLocalTimestamp>
+      <IntrospectionStateNumber>1058</IntrospectionStateNumber>
+      <LastIntrospectionLocalTimestamp>2024-05-03.14:37:02</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>523</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
     </schema>
-    <table id="268" parent="267" name="kastrula">
+    <table id="268" parent="267" name="file_info">
+      <ObjectId>16561</ObjectId>
+      <StateNumber>1049</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <table id="269" parent="267" name="kastrula">
       <ObjectId>16509</ObjectId>
       <StateNumber>1010</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="269" parent="267" name="post">
+    <table id="270" parent="267" name="post">
       <ObjectId>16542</ObjectId>
-      <StateNumber>1031</StateNumber>
+      <StateNumber>1035</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="270" parent="267" name="user_account">
+    <table id="271" parent="267" name="user_account">
       <ObjectId>16549</ObjectId>
-      <StateNumber>1031</StateNumber>
+      <StateNumber>1042</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="271" parent="268" name="id">
+    <column id="272" parent="268" name="id">
+      <DasType>uuid|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>1047</StateNumber>
+      <TypeId>2950</TypeId>
+    </column>
+    <column id="273" parent="268" name="original_file_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>2</Position>
+      <StateNumber>1047</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="274" parent="268" name="size">
+      <DasType>bigint|0s</DasType>
+      <Position>3</Position>
+      <StateNumber>1047</StateNumber>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="275" parent="268" name="storage_file_name">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>4</Position>
+      <StateNumber>1047</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="276" parent="268" name="type">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>1047</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="277" parent="268" name="file_info_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16566</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1047</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="278" parent="268" name="file_info_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16567</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1047</StateNumber>
+      <UnderlyingIndexId>16566</UnderlyingIndexId>
+    </key>
+    <column id="279" parent="269" name="id">
       <DasType>integer|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1010</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="272" parent="268" name="id">
+    <index id="280" parent="269" name="id">
       <ColNames>id</ColNames>
       <ObjectId>16512</ObjectId>
       <Primary>1</Primary>
@@ -4288,45 +4340,51 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="273" parent="268" name="id">
+    <key id="281" parent="269" name="id">
       <ObjectId>16513</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1010</StateNumber>
       <UnderlyingIndexId>16512</UnderlyingIndexId>
     </key>
-    <column id="274" parent="269" name="id">
+    <column id="282" parent="270" name="id">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>1027</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="275" parent="269" name="text">
+    <column id="283" parent="270" name="text">
       <DasType>varchar(255)|0s</DasType>
       <Position>2</Position>
       <StateNumber>1027</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="276" parent="269" name="title">
+    <column id="284" parent="270" name="title">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>1027</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="277" parent="269" name="author_id">
+    <column id="285" parent="270" name="author_id">
       <DasType>uuid|0s</DasType>
       <Position>4</Position>
       <StateNumber>1030</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <foreign-key id="278" parent="269" name="fk3dnm0qghgeglek9tflsr88jjc">
+    <column id="286" parent="270" name="creation_date">
+      <DasType>timestamp(6) with time zone|0s</DasType>
+      <Position>5</Position>
+      <StateNumber>1035</StateNumber>
+      <TypeId>1184</TypeId>
+    </column>
+    <foreign-key id="287" parent="270" name="fk3dnm0qghgeglek9tflsr88jjc">
       <ColNames>author_id</ColNames>
       <ObjectId>16556</ObjectId>
       <StateNumber>1031</StateNumber>
       <RefKeyColPositions>2</RefKeyColPositions>
       <RefTableId>16549</RefTableId>
     </foreign-key>
-    <index id="279" parent="269" name="post_pkey">
+    <index id="288" parent="270" name="post_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16547</ObjectId>
@@ -4335,45 +4393,51 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="280" parent="269" name="post_pkey">
+    <key id="289" parent="270" name="post_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16548</ObjectId>
       <Primary>1</Primary>
       <StateNumber>1027</StateNumber>
       <UnderlyingIndexId>16547</UnderlyingIndexId>
     </key>
-    <column id="281" parent="270" name="avatar_id">
+    <column id="290" parent="271" name="avatar_id">
       <DasType>uuid|0s</DasType>
       <Position>1</Position>
       <StateNumber>1028</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="282" parent="270" name="id">
+    <column id="291" parent="271" name="id">
       <DasType>uuid|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1028</StateNumber>
       <TypeId>2950</TypeId>
     </column>
-    <column id="283" parent="270" name="email">
+    <column id="292" parent="271" name="email">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
       <StateNumber>1028</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="270" name="name">
+    <column id="293" parent="271" name="name">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
       <StateNumber>1028</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="285" parent="270" name="password_hash">
+    <column id="294" parent="271" name="password_hash">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
       <StateNumber>1028</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="286" parent="270" name="user_account_pkey">
+    <column id="295" parent="271" name="token">
+      <DasType>varchar(255)|0s</DasType>
+      <Position>6</Position>
+      <StateNumber>1042</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="296" parent="271" name="user_account_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16554</ObjectId>
@@ -4382,7 +4446,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="287" parent="270" name="user_account_pkey">
+    <key id="297" parent="271" name="user_account_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16555</ObjectId>
       <Primary>1</Primary>

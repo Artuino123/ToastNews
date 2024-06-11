@@ -26,12 +26,10 @@ public class NewsController {
         List<Post> posts = postRepository.findAll();
         return postMapper.toDtoList(posts);
     }
-
     /*
     @PostMapping("/news")
     PostDto createPost() {
         User user = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-
     }
     */
 }

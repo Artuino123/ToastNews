@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d657c522-5502-4bb3-91cb-7b58cf5a43e8" name="Changes" comment="commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/ProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/dto/FileInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/model/FileInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/repository/FileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfb15b27-15ed-4fd5-b5f5-bbdf1f935618.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cfb15b27-15ed-4fd5-b5f5-bbdf1f935618.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/cfb15b27-15ed-4fd5-b5f5-bbdf1f935618/storage_v2/_src_/database/toast_news.620S5g/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/cfb15b27-15ed-4fd5-b5f5-bbdf1f935618/storage_v2/_src_/database/toast_news.620S5g/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/AuthorizationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/AuthorizationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/services/AuthorizationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/services/AuthorizationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/services/impl/AuthorizationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/services/impl/AuthorizationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/ToastNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/ToastNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/ProfileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/handlers/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/controller/handlers/ErrorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/model/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/ngteam/toast_news/model/Post.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -64,6 +71,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.ngteam.toast_news.services.impl" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ToastNews" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ToastNews" />
@@ -104,7 +116,24 @@
       <workItem from="1714319502154" duration="7824000" />
       <workItem from="1714472518059" duration="795000" />
       <workItem from="1714517470243" duration="520000" />
-      <workItem from="1714555221325" duration="9586000" />
+      <workItem from="1714555221325" duration="12265000" />
+      <workItem from="1714737556141" duration="816000" />
+      <workItem from="1714744761315" duration="6107000" />
+      <workItem from="1714927682407" duration="608000" />
+      <workItem from="1715008285656" duration="6885000" />
+      <workItem from="1715171745096" duration="995000" />
+      <workItem from="1715266355275" duration="14000" />
+      <workItem from="1715611494354" duration="1089000" />
+      <workItem from="1715615134926" duration="604000" />
+      <workItem from="1715617196518" duration="1792000" />
+      <workItem from="1715871599114" duration="1897000" />
+      <workItem from="1715953037052" duration="2478000" />
+      <workItem from="1716013909376" duration="87000" />
+      <workItem from="1716038436189" duration="2520000" />
+      <workItem from="1716213628264" duration="1033000" />
+      <workItem from="1716381469508" duration="632000" />
+      <workItem from="1716906414300" duration="715000" />
+      <workItem from="1716986503749" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <option name="closed" value="true" />
